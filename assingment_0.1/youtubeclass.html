@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube_class</title>
+</head>
+
+<body>
+    <form>
+        <lable>USERNAME: </lable><!-- lable only gives the lable-->
+        <input><!--this gives the box for input--> <br> <!-- br is for break-->
+        <lable for="username">USERNAME: </lable><!--browser reads for and search for id -->
+        <input type="text" id="username" name="username" placeholder="enter username here"><br>
+        <!-- type and id is for comparison and label in the box name is for sever verification-->
+        <hr>
+
+        <label type="email">E-Mail:</label>
+        <input type="text" id="email" name="email" placeholder="enteryour email"><br>
+        <hr>
+
+        <lable for="Password">PASSWORD:</lable>
+        <input type="password" id="Password" name="Password" placeholder="enteryour password here"><br>
+        <hr>
+
+        <lable for="submit">SUBMIT:</lable>
+        <input type="submit" id="submit" name="submit" placeholder="mandatory"><br>
+        <input type="submit"><br>
+
+        <input type="reset"><br>
+        <input type="submit" value="samarpinchandi"><br><!-- doing same thing but changing name-->
+        <input type="reset" value="erase"><br>
+        <hr>
+
+        <input type="radio"><!-- DOT FOR CLICK--><br>
+        <label> select gender</label><br>
+        <label for="male">MALE</label>
+        <input type="radio" id="male" name="gender"><!-- give name same so that either one option works-->
+        <label for="female">FEMALE</label>
+        <input type="radio" id="female" name="gender"> <br>
+        <hr>
+
+        <input type="checkbox"><br><!--check box-->
+        <lable>select cources</lable><br>
+        <lable for="Html">html</lable>
+        <input type="checkbox" id="Html" name="course"><!-- same here name sholud be same-->
+        <lable for="css">CSS</lable>
+        <input type="checkbox" id="css" name="course"><br>
+        <hr>
+        <label>button</label>
+        <input type="button"><br>
+        <input type="button" onclick="alert('hello world')" value="clickme"><br>
+        <!--here button will give button click on will give the alert we given value will give name to button -->
+        <hr>
+        <input type="color"><br>
+        <lable for="clour">select colour</lable> <!--gives colour to select-->
+        <input type="color" id="clour" name="clour"><br>
+        <hr>
+        <input type="date"><!--gives date to select--><br>
+        <label for="birthday">SELECT BirthDay</label>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <hr>
+        <!--min ad max -->
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+        <hr>
+        <input type="datetime"><br>
+        <input type="datetime-local"><br>
+        <label for='birthday'>ENTER BIRTHDAY DATE AND TIME</label>
+        <input type="datetime-local" id="birthday">
+        <hr>
+        <input type="image">
+        <label>PUT YOUR IMAGE</label><br>
+        <input type="image" src="/HTML/image_resource/original png 632kb.png"><br><!-- insert image using src -->
+        <input type="image" src="/HTML/image_resource/original png 632kb.png" width="48"
+            height="48"><!--resized image-->
+
+        <hr>
+        <input type="file"><!--to chosee file--><br>
+        <label for="insertimage">INSERT FILE</label><br>
+        <input type="file" id="insertimage" name="insertimage">
+        <hr>
+        <input type="hidden">        
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <!--
+	• Creates a hidden input field that is not visible to the user on the webpage.
+	• It automatically sends fixed data (custId = 3487) along with the rest of the form when submitted, often used to pass record IDs, session tokens, or user IDs.
+        -->
+        <hr>
+        <input type="month"><!--display month year--><br>
+        <label for="birthdaymonth">birthday month</label>
+        <input type="month" id="birthdaymonth" name="birthdaymonth">
+        <hr>
+        <input type="number">
+        <label for="mobilenumber">ENTERMOBILENUMBER</label>
+        <input type="number" id="mobilenumber" name="mobilenumber">
+
+    </form>
+</body>
+
+</html>
